@@ -1,6 +1,6 @@
 local Library = {}
 
-function Library:CreateWindow(name)
+function Library.CreateWindow(name)
 	-- Instances:
 
 	local MethisUI = Instance.new("ScreenGui")
