@@ -1,6 +1,6 @@
 local Library = {}
 
-function Library.CreateWindow(text)
+function Library:CreateWindow(name)
 	-- Instances:
 
 	local MethisUI = Instance.new("ScreenGui")
@@ -35,7 +35,7 @@ function Library.CreateWindow(text)
 	Line.Position = UDim2.new(0, 0, 0, 40)
 	Line.Size = UDim2.new(1, 0, 0, 2)
 
-	Text.Name = "Text"
+	Text.Name = "Text
 	Text.Parent = Main
 	Text.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	Text.BackgroundTransparency = 1.000
@@ -43,7 +43,7 @@ function Library.CreateWindow(text)
 	Text.BorderSizePixel = 0
 	Text.Size = UDim2.new(1, 0, 0, 40)
 	Text.Font = Enum.Font.SourceSansSemibold
-	Text.Text = text
+	Text.Text = name
 	Text.TextColor3 = Color3.fromRGB(162, 162, 162)
 	Text.TextSize = 21.000
 	Text.TextWrapped = true
