@@ -1,6 +1,6 @@
 local Library = {}
 
-function Library.CreateWindow(name)
+function Library:CreateWindow(name)
 	-- Instances:
 
 	local MethisUI = Instance.new("ScreenGui")
@@ -35,7 +35,7 @@ function Library.CreateWindow(name)
 	Line.Position = UDim2.new(0, 0, 0, 40)
 	Line.Size = UDim2.new(1, 0, 0, 2)
 
-	Text.Name = "Text
+	Text.Name = name
 	Text.Parent = Main
 	Text.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	Text.BackgroundTransparency = 1.000
@@ -63,7 +63,7 @@ function Library.CreateWindow(name)
 	-- Scripts:
 
 	local function TGPLIZQ_fake_script() -- ImageButton.Script 
-		local sc = Instance.new('LocalScript', ImageButton)
+		local sc = ImageButton
 
 		local TweenService = game:GetService("TweenService")
 		local DestroyTime = 0.4
